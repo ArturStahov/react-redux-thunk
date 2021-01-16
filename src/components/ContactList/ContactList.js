@@ -1,10 +1,7 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  getAllItem,
-  deleteItem,
-} from '../../redux/contacts/contacts-operation';
+import { deleteItem } from '../../redux/contacts/contacts-operation';
 import { itemsArray } from './contactList-selector';
 import { filterValue } from '../FilterContacts/filter-selector';
 
@@ -27,10 +24,6 @@ export default function ContactList() {
   const arrFilters = filterContacts(contactsArray);
 
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getAllItem());
-  }, []);
 
   return (
     <TaskList>

@@ -11,7 +11,7 @@ export const getAllItem = () => async dispatch => {
     const { data } = await fetchGetItem();
     dispatch(action.getAllIItemSuccess(data));
   } catch (error) {
-    dispatch(action.getAllIItemError());
+    dispatch(action.getAllIItemError(error.message));
   }
 };
 
@@ -25,7 +25,7 @@ export const addItem = item => async dispatch => {
     const { data } = await fetchAddItem(contacts);
     dispatch(action.addItemSuccess(data));
   } catch (error) {
-    dispatch(action.addItemError());
+    dispatch(action.addItemError(error.message));
   }
 };
 
@@ -36,6 +36,6 @@ export const deleteItem = item => async dispatch => {
     console.log(response);
     dispatch(action.deleteItemSuccess(item));
   } catch (error) {
-    dispatch(action.getAllIItemError());
+    dispatch(action.getAllIItemError(error.message));
   }
 };

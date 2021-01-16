@@ -9,3 +9,4 @@ use:
 - thunk
 - pnotify
 - json-server
+- axios

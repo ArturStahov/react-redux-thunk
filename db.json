@@ -1,3 +1,14 @@
 {
-  "contacts": []
+  "contacts": [
+    {
+      "nameValue": "Artur",
+      "numberValue": "+380637150278",
+      "id": 1
+    },
+    {
+      "nameValue": "gg",
+      "numberValue": "+380637150278",
+      "id": 2
+    }
+  ]
 }
