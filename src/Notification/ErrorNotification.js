@@ -20,4 +20,12 @@ const errorContactPresent = () => {
   });
 };
 
-export { errorBadValueNumber, errorContactPresent };
+const errorContactsHandler = errors => {
+  return error({
+    title: 'Hi! Sorry...',
+    text: errors?.message ?? 'try later',
+    delay: 3000,
+  });
+};
+
+export { errorBadValueNumber, errorContactPresent, errorContactsHandler };

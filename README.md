@@ -10,3 +10,4 @@ use:
 - pnotify
 - json-server
 - axios
+- react-loader-spinner
