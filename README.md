@@ -1,14 +1,11 @@
 React base template
 
-add^
+### notebook
 
-- styled-component; npm install --save styled-components
-- prop-types; npm install --save prop-types
-- git-page; npm install --save gh-pages
-- husky, lintstaged, prettier; npm install --save-dev prettier husky lint-staged
-- base css;
-- css normalize @csstools/normalize.css
+use:
+
+- react
 - redux
-- react-redux
-- redux-toolkit @reduxjs/toolkit
-- component: RenderPortal react-dom
+- thunk
+- pnotify
+- json-server
